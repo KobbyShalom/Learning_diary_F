@@ -1,5 +1,7 @@
 project:
   type: book
+  output-dir: docs
+
 
 book:
   title: "Learning_diary_F"
@@ -9,6 +11,7 @@ book:
     - index.qmd
     - intro.qmd
     - chapter_1.qmd
+    - chapter_4.qmd
     - summary.qmd
     - references.qmd
 

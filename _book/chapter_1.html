@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Shalom Kobby Ampiaw">
-<meta name="dcterms.date" content="2025-11-03">
 
-<title>Learning_diary_F</title>
+<title>Learning_diary_F - 2&nbsp; Introduction to Remote Sensing &amp; Satellite Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -66,7 +30,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./summary.html" rel="next">
+<link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -109,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_1.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing &amp; Satellite Data</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -136,7 +101,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -148,20 +113,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter_1.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapter_1.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing &amp; Satellite Data</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Galamsey</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -180,7 +139,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">2.1</span> Introduction</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">2.2</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">2.3</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -189,26 +150,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Learning_diary_F</h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing &amp; Satellite Data</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Shalom Kobby Ampiaw </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">November 3, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -216,13 +165,80 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>This is a Quarto book.</p>
-<p>To learn more about Quarto books visit #</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#1 + 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="introduction" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2.1</span> Introduction</h2>
+<p>This is the first week of remote sensing module. I will first like to state a brief overview of what it entails.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week_1/download2.PNG" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Overview of Remote Sensing</figcaption>
+</figure>
 </div>
+<p>Remote sensing for me is a method gathered about the Earth’s surface without direct contact through passive (e.g., satellite imagery) and active (e.g., LIDAR, RADAR) sensors. It can be integrated with GIS to analyse landscapes, land cover, demographics and others. Active sensors compute elevation using laser pulses, while passive sensors capture reflected sunlight, they all are electromagnetic waves. Combining these techniques and noting the interaction in the earth’s atmosphere, enables precise environmental monitoring, resource management, and biodiversity conservation at multiple spatial scales. Satellites I want to delve deeper into the suspend equipment above the atmosphere - Satellites. I find it interesting because when I think of remote sensing satellites come to mind. These satellites are sent up to the earth’s orbit. There are types of satellites. These are</p>
+<ul>
+<li><strong>Geostationary Satellites</strong> - These are stationary satellites which are normally used for weather monitoring, telecommunications and environmental observations.</li>
+<li><strong>Low Earth Orbit (LEO) Satellites</strong>: These satellites are used for high-resolution imaging has it is normally placed 160 and 2,000 km above Earth’s surface.</li>
+<li><strong>Sun-Synchronous (Polar) Satellites</strong> – Just like the same, these satellites orbit the earth in a polar direction and in sync with the sun. This is most used for scientific and environmental monitoring.</li>
+</ul>
+<p>Among these types of satellites, I want to focus on the sun-synchronous types mainly Sentinel and Landsat satellite. Two main satellites stand out in remote sensing.</p>
+<p>Types of sensors on both types</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Landsat-8</th>
+<th>Sentinel-2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Resolution</td>
+<td>30m</td>
+<td>10-60m</td>
+</tr>
+<tr class="even">
+<td>Revisit Time</td>
+<td>16days</td>
+<td>5days</td>
+</tr>
+<tr class="odd">
+<td>Bands</td>
+<td>11 bands</td>
+<td>13 bands</td>
+</tr>
+</tbody>
+</table>
+<p>Let’s look deeper into the bands Basically, bands are like different filters with specific wavelengths that satellites use to capture images of the earth surface. Thus, each band serves a specific purpose and for what it is best suited for. The USGS comparison graph (USGS, n.d.) illustrates how different bands on Landsat and Sentinel-2 cover different portions of the electromagnetic spectrum.</p>
+<p>Looking at the image here</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week_1/Comparison of Landsat 7 and 8 bands with Sentinel-2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Comparison of Landsat 7 and 8 bands with Sentinel-2</figcaption>
+</figure>
+</div>
+<p>In the graph, the x axis presents the wavelength of the electromagnetic spectrum and y which shows the atmospheric transmission (%) indicates the amount of light passing through the atmosphere. The bands are important for me because I believe they tell a lot about what the data can be best used for and help in narrowing down which satellite to use in a study. Here is a summary of the bands and that use case.</p>
+</section>
+<section id="application" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="application"><span class="header-section-number">2.2</span> Application</h2>
+<p>For this section, I want to use what I learnt in summary to understand which satellite to use for land cover classification. A study by Ahady, A.B., and Kaplan, G. shows the comparison between Landsat-8 and Sentinel-2 data over the city of Kabul. This was a comparison over accuracy of land cover considering water, cropland, urban, and bare land.</p>
+<p>Key insights</p>
+<p>The Landsat-8 had an overall classification accuracy 85.04%. while the Sentinel-2 had a classification accuracy of 94.26%. Now lets look at these images <img src="week_1/Landsat-8’s classification.png" class="img-fluid" alt="Landsat-8’s classification"></p>
+<p><img src="learning_dairy/week_1/Sentinel-2 classification.png" class="img-fluid" alt="Sentinel-2 classification"> From the images we can see that Figure 2 has finer detail as compared to figure one. This may be due to several reasons, but I feel it’s mainly due to spatial resolution. The sentinel has a higher resolution, so it expected to have an influence on its accuracy, as it as able to define features more clearly. Another factor accounting for higher accuracy maybe the number of visits. The sentinel has shorter revisit period, thus more volume of data can be gathered in a month as compared to the Landsat data. Thus, a higher chance of getting an image with little interference hence a high accuracy. Lastly, I want to check the bands. This also has major effect on accuracy. As stated earlier, spectral bands are essential filters that satellites use to analyze Earth’s surface. Ahady &amp; Kaplan’s classification relied on surface reflectance bands, which directly tie back to the band functions I described in Week 1. The near-infrared (NIR, B5 for Landsat and B8 for Sentinel-2) played a key role in differentiating urban and vegetative areas, further demonstrating the importance of understanding band selection in remote sensing applications.</p>
+<p>This does not go to say we can poke holes in the results of the study. One can be model used in analysing the data. These pictures are cut clips of the same location and I’m not sure both satellites can capture the same location within a single tile. So, merging might have been done hence reducing the robustness of the result. This doesn’t go to say Landsat is better at land cover than sentinel satellite.</p>
+</section>
+<section id="reflection" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">2.3</span> Reflection</h2>
+<p>It is the first week of the term and has been a slow start. Still wondering what I can make out the course and maybe in week 10 will probably have one. I now understand the bases of the remote sensing,</p>
+<p>what are they?</p>
+<p>excluding the analysis part. From the summary and application part, I am wondering if data from both Landsat and Sentinel can use concurrently in a study. Probable if the data was merged, we will have the wealth of historical data from the landsat series and the accuracy of the sentinel data. This can be used in understanding trends of natural disasters or the climate change…how</p>
+<p>. These two do not</p>
+<ul>
+<li><p>context: how do you think this could used - landcover, pollution montiroing (S5P) and why might that be useful</p></li>
+<li><p>future exploration</p></li>
+<li><p>did you like SNAP, what were limtations of it and</p></li>
+</ul>
+<p>Intro to papers</p>
+<p>Criticality of papers</p>
 
 
 </section>
@@ -463,10 +479,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
