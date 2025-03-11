@@ -2,11 +2,11 @@
 title: "Galamsey"
 ---
 
-# Summary
+## Summary
 
 ### Introduction
 
-The system in Ghana is a unique system where policies are mainly created by the central government. The implementation of the policy is through the ministries. The mainly create taskforces with the police to enforce it.
+The system in Ghana is a unique system where policies are mainly created by the central government. The implementation of the policy is through the ministries. The mainly create taskforce with the police to enforce it.
 
 ### Background
 
@@ -28,7 +28,7 @@ The policy does state how ministry and their district offices monitor the illega
 
 The government established an anti-galamsey task force code named Operation Halt was formed to crackdown on illegal mining activities.(“Anti-galamsey task force destroys 10 Changfans other mining equipment on Pra River,” 2024) Even though the taskforce was formed in October 2024, the illegal mining still persist with four civil society organizations calling for leadership changes.(“Anti-galamsey task force destroys 10 Changfans other mining equipment on Pra River,” 2024; “Illegal mining menace,” 2025)
 
-# Application
+## Application
 
 The current method used by the taskforce to identify and deploy people to the sites is unknown, but I believe earth observation (EO) can be used to improve the effectiveness of the taskforce. There are many sensors which can be used for this task, but I will refer to literature to recommend one or two.
 
@@ -54,11 +54,10 @@ The general approach is creating a dashboard to direct the deployment of a taskf
 
 ![Data workflow](week_4/workflow_1.png)
 
+The second phase will involve using the data from archives and using models to process the data and highlight areas of interest. This will forwarded to the partners who in this case can be Ghana Water Company, the Ghana Forestry commission and local district assemblies to check to confirm. These are key partners because the effects of illegal mining affect their works. So they can compare with their database to see if there is any correlation with incidents or irregularities. With their input which can be considered as a validation of detections, the dashboard can be created. This will then direct the taskforce on where to go. It will prorisite the locations according to the level impact for an effective. It should be made public so everyone knows the mining activities is tracked and actively tackle with transperancy.
 
+![Dashboard workflow](week_4/workflow_2.png)
 
+With an effective monitoring system, an action plan and a taskforce supplmemted by third parties, illegal mining can see as an unproductive venture. While serving as a deterrence, it aids the Government in achieving more revenue as illegal miners will turn legal miners and less money is spent on rehabilitating water bodies and forests. Implementation of this will also aid the government achieve it’s goal of sustainable and responsible mining. It also ties in with government’s aim of protecting water bodies and agricultural lands. It even goes as far as achieving the Sustainable Development Goals, specifically goals 2, 6, 14 and 15. (Essah, 2022) Thus, reduced soil degradation of agricultural lands(SDG 2), water pollution (SDG, 6 & 14) and protect the wildlide (SDG, 15).
 
-
-
-
-
-
+## Reflections
