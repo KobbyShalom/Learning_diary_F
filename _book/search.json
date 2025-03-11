@@ -14,20 +14,6 @@
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
-  },
-  {
     "objectID": "chapter_1.html#introduction",
     "href": "chapter_1.html#introduction",
     "title": "2  Introduction to Remote Sensing & Satellite Data",
@@ -47,5 +33,19 @@
     "title": "2  Introduction to Remote Sensing & Satellite Data",
     "section": "2.3 Reflection",
     "text": "2.3 Reflection\nIt is the first week of the term and has been a slow start. Still wondering what I can make out the course and maybe in week 10 will probably have one. I now understand the bases of the remote sensing,\nwhat are they?\nexcluding the analysis part. From the summary and application part, I am wondering if data from both Landsat and Sentinel can use concurrently in a study. Probable if the data was merged, we will have the wealth of historical data from the landsat series and the accuracy of the sentinel data. This can be used in understanding trends of natural disasters or the climate change…how\n. These two do not\n\ncontext: how do you think this could used - landcover, pollution montiroing (S5P) and why might that be useful\nfuture exploration\ndid you like SNAP, what were limtations of it and\n\nIntro to papers\nCriticality of papers"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "3  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   }
 ]
