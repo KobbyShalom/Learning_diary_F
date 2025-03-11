@@ -4,9 +4,9 @@ title: "Introduction to Remote Sensing & Satellite Data"
 
 ## Introduction
 
-This is the first week of remote sensing module. I will first like to state a brief overview of what it entails.
+The first week of remote sensing module. I will first like to state a brief overview of what it entails.
 
-![Overview of Remote Sensing](learning_dairy/week_1/download2.png)
+![Overview of Remote Sensing](week_1/download2.PNG)
 
 Remote sensing for me is a method gathered about the Earth's surface without direct contact through passive (e.g., satellite imagery) and active (e.g., LIDAR, RADAR) sensors. It can be integrated with GIS to analyse landscapes, land cover, demographics and others. Active sensors compute elevation using laser pulses, while passive sensors capture reflected sunlight, they all are electromagnetic waves. Combining these techniques and noting the interaction in the earth’s atmosphere, enables precise environmental monitoring, resource management, and biodiversity conservation at multiple spatial scales. Satellites I want to delve deeper into the suspend equipment above the atmosphere - Satellites. I find it interesting because when I think of remote sensing satellites come to mind. These satellites are sent up to the earth’s orbit. There are types of satellites. These are
 
@@ -28,7 +28,7 @@ Let’s look deeper into the bands Basically, bands are like different filters w
 
 Looking at the image here
 
-![Comparison of Landsat 7 and 8 bands with Sentinel-2](learning_dairy/week_1/Comparison%20of%20Landsat%207%20and%208%20bands%20with%20Sentinel-2.png)
+![Comparison of Landsat 7 and 8 bands with Sentinel-2](week_1/Comparison%20of%20Landsat%207%20and%208%20bands%20with%20Sentinel-2.png)
 
 In the graph, the x axis presents the wavelength of the electromagnetic spectrum and y which shows the atmospheric transmission (%) indicates the amount of light passing through the atmosphere. The bands are important for me because I believe they tell a lot about what the data can be best used for and help in narrowing down which satellite to use in a study. Here is a summary of the bands and that use case.
 
@@ -38,7 +38,7 @@ For this section, I want to use what I learnt in summary to understand which sat
 
 Key insights
 
-The Landsat-8 had an overall classification accuracy 85.04%. while the Sentinel-2 had a classification accuracy of 94.26%. Now lets look at these images ![Landsat-8’s classification](learning_dairy/week_1/Landsat-8’s%20classification.png)
+The Landsat-8 had an overall classification accuracy 85.04%. while the Sentinel-2 had a classification accuracy of 94.26%. Now lets look at these images ![Landsat-8’s classification](week_1/Landsat-8’s%20classification.png)
 
 ![Sentinel-2 classification](learning_dairy/week_1/Sentinel-2%20classification.png) From the images we can see that Figure 2 has finer detail as compared to figure one. This may be due to several reasons, but I feel it’s mainly due to spatial resolution. The sentinel has a higher resolution, so it expected to have an influence on its accuracy, as it as able to define features more clearly. Another factor accounting for higher accuracy maybe the number of visits. The sentinel has shorter revisit period, thus more volume of data can be gathered in a month as compared to the Landsat data. Thus, a higher chance of getting an image with little interference hence a high accuracy. Lastly, I want to check the bands. This also has major effect on accuracy. As stated earlier, spectral bands are essential filters that satellites use to analyze Earth's surface. Ahady & Kaplan’s classification relied on surface reflectance bands, which directly tie back to the band functions I described in Week 1. The near-infrared (NIR, B5 for Landsat and B8 for Sentinel-2) played a key role in differentiating urban and vegetative areas, further demonstrating the importance of understanding band selection in remote sensing applications.
 
