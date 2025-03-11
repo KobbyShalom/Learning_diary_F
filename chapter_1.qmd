@@ -4,7 +4,7 @@ title: "Introduction to Remote Sensing & Satellite Data"
 
 ## Introduction
 
-The first week of remote sensing module. I will first like to state a brief overview of what it entails.
+This is the first week of remote sensing module. I will first like to state a brief overview of what it entails.
 
 ![Overview of Remote Sensing](week_1/download2.PNG)
 
