@@ -3,11 +3,12 @@ project:
 
 book:
   title: "Learning_diary_F"
-  author: "Norah Jones"
+  author: "Shalom Kobby Ampiaw"
   date: "11/03/2025"
   chapters:
     - index.qmd
     - intro.qmd
+    - chapter_1.qmd
     - summary.qmd
     - references.qmd
 

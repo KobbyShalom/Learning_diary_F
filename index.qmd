@@ -2,8 +2,8 @@
 
 This is a Quarto book.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+To learn more about Quarto books visit \#
 
 ```{r}
-1 + 1
+#1 + 1
 ```
