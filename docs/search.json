@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Learning_diary_F",
     "section": "",
-    "text": "Preface\nThis is a diary showing my progress, understanding, and interests in remote sensing. My background in civil engineering, green/sustainable development (as an EDGE expert), and sound engineering might influence how I reflect on the content and what stands out to me.\nAs a Ghanaian, I’m also interested in how remote sensing methods and sensors apply across both developing and developed countries. I’ll likely reflect on how universal or adaptable these approaches really are.\nWhere possible, I will also consider some economic or financial implications of some methods or strategies discussed each week—especially in terms of how feasible they are in different contexts.\nOverall, my reflections will focus on remote sensing and its value for urban development, while trying to keep a neutral and critical perspective on its benefits and limitations."
+    "text": "Index# {.unnumbered}"
   },
   {
     "objectID": "intro.html",
@@ -82,5 +82,12 @@
     "title": "3  Xaringan",
     "section": "",
     "text": "This is a link for a xaringan presentation: xaringan\nThe presentations covers an overview, applications and some reflections on the MODIS sensor"
+  },
+  {
+    "objectID": "chapter_2.html",
+    "href": "chapter_2.html",
+    "title": "3  Xaringan presentation",
+    "section": "",
+    "text": "This is a link for a xaringan presentation: MODIS\nThe presentations covers an overview, applications and some reflections on the MODIS sensor."
   }
 ]
