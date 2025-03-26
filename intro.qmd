@@ -1,9 +1,9 @@
-# Introduction
+## Preface {.unnumbered} 
 
-This is a book created from markdown and executable code.
+This is a diary showing my progress, understanding, and interests in remote sensing. My background in civil engineering, green/sustainable development (as an EDGE expert), and sound engineering might influence how I reflect on the content and what stands out to me.
 
-See @knuth84 for additional discussion of literate programming.
+As a Ghanaian, I’m also interested in how remote sensing methods and sensors apply across both developing and developed countries. I’ll likely reflect on how universal or adaptable these approaches really are.
 
-```{r}
-1 + 1
-```
+Where possible, I will also consider some economic or financial implications of some methods or strategies discussed each week—especially in terms of how feasible they are in different contexts.
+
+Overall, my reflections will focus on remote sensing and its value for urban development, while trying to keep a neutral and critical perspective on its benefits and limitations.

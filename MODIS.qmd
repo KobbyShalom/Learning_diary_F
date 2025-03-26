@@ -1,0 +1,9 @@
+---
+title: "Xaringan"
+---
+
+This is a link for a xaringan presentation: 
+[xaringan](https://slides.yihui.org/xaringan/#1)
+
+The presentations covers an overview, applications and some reflections on the MODIS sensor
+
