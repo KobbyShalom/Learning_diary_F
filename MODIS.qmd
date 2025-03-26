@@ -2,7 +2,7 @@
 title: "Xaringan"
 ---
 
-This is a link for a xaringan presentation: [MODIS]https://kobbyshalom.github.io/Modis_slides/#1)
+This is a link for a xaringan presentation: [MODIS](https://kobbyshalom.github.io/Modis_slides/#1)
 
 The presentations covers an overview, applications and some reflections on the MODIS sensor
 2
