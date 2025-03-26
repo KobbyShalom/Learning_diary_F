@@ -11,7 +11,6 @@ book:
     - index.qmd
     - intro.qmd
     - chapter_1.qmd
-    - MODIS.qmd
     - chapter_4.qmd
     - summary.qmd
     - references.qmd
