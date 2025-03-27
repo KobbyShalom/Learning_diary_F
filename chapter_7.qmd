@@ -1,3 +1,30 @@
 ---
 title: "Classification II"
 ---
+
+## Summary
+
+This week built on last week's classification session, but took a different turn by focusing on pre-classified datasets and sub-pixel analysis. Instead of starting from raw satellite imagery, we explored ready-to-use classification products like GlobeLand30, MODIS, and Dynamic World. These datasets allow us to work faster but raise questions about the loss of control over classification accuracy and assumptions baked into the processing.
+
+The key focus for me was sub-pixel classification—a method that tries to identify multiple land cover types within a single pixel. This is really helpful when working with coarse resolution imagery where, for example, a 30m pixel might contain buildings, roads, and trees. Traditional classification would assign it one label, but sub-pixel methods estimate the proportions of each type instead.
+
+![Fig. 1 A zoomed-in pixel showing buildings, vegetation, and roads](week_8/zoomed_in_pixel.png)
+
+Sub-pixel analysis is especially useful in urban fringe areas, where land cover is complex and mixed. But it also raises new challenges around validation and reliability. That leads us into the importance of accuracy assessment.
+
+### Accuracy Assessment
+
+In remote sensing, three key metrics help evaluate performance:
+
+Producer Accuracy – How well the model captures a class based on reference data ![](week_8/Picture8.png)
+
+User Accuracy – How likely the modelled class is correct when visited on the ground![](week_8/Picture9.png)
+
+Overall Accuracy – The total correct classifications across all classes ![](week_8/Picture10.png)
+
+
+![Fig. 2 Confusion matrix from Dynamic World](week_8/Picture6.png)
+
+Looking at Dynamic World, for instance, the model achieved 94% recall for water—meaning it detected most water pixels—but only 87% user accuracy, meaning some areas it labelled as water were not actually water on the ground. Averaging across all classes, the overall accuracy came to around 72%, which reflects the trade-off between global coverage and precision.
+
+This week reinforced how classification is never just about the algorithm—it's also about trusting the output, especially when you didn’t build it yourself.
