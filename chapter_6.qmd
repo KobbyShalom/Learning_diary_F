@@ -51,7 +51,7 @@ The second study, by Karimi et al. (2019), applied SVM to predict urban expansio
 
 To improve results, the model was tuned through kernel selection and parameter optimization. Because urban growth datasets are often imbalanced, with more unbuilt than built land, the study used strategic sampling to reduce bias. It achieved 78% accuracy, slightly lower than the first study, likely due to the larger dataset and the complexity of time-based prediction. SVM proved valuable in handling both continuous and categorical variables, making it well-suited for modeling urban growth trends.
 
-### Insights for applications 
+### Insights for applications
 
 Both studies applied SVM as a binary classifier, but their approaches differed. One focused on spatial classification, while the other tackled temporal change prediction. The second study likely dealt with a larger dataset, which might explain its lower accuracy, as SVM tends to perform better on smaller datasets. This raises the question of how well SVM scales for large-scale urban studies. A possible improvement would be enhancing SVM models with other machine learning techniques to handle large datasets more efficiently.
 
@@ -68,5 +68,3 @@ What I found interesting is that both studies relied on SVM as a binary classifi
 SVM works well with limited, high-quality data, but in broader applications like national urban expansion studies, it might struggle with processing speed and generalization. A key takeaway is that SVM could be enhanced by hybrid approaches, for instance, integrating it with Random Forest, neural networks, or rule-based methods for better scalability.
 
 Overall, this week showed me that classification is not just a technical process—it’s about tailoring tools to fit data types, goals, and scale, and SVM is just one part of a growing toolbox in urban remote sensing.
-
-

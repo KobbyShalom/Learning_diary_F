@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning_diary_F - 6&nbsp; Classification I</title>
+<title>Learning_diary_F - 7&nbsp; Classification I</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_6.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification I</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_6.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification I</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -125,38 +125,44 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./chapter_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">week 3</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./chapter_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Galamsey</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Galamsey</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_6.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification I</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification I</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification II</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classification II</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">SAR</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">SAR</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -175,16 +181,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">6.1</span> Summary</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#choosing-the-right-sensor" id="toc-choosing-the-right-sensor" class="nav-link" data-scroll-target="#choosing-the-right-sensor"><span class="header-section-number">6.1.1</span> Choosing the Right Sensor</a></li>
-  <li><a href="#classification-methods-svm" id="toc-classification-methods-svm" class="nav-link" data-scroll-target="#classification-methods-svm"><span class="header-section-number">6.1.2</span> Classification Methods &amp; SVM</a></li>
+  <li><a href="#choosing-the-right-sensor" id="toc-choosing-the-right-sensor" class="nav-link" data-scroll-target="#choosing-the-right-sensor"><span class="header-section-number">7.1.1</span> Choosing the Right Sensor</a></li>
+  <li><a href="#classification-methods-svm" id="toc-classification-methods-svm" class="nav-link" data-scroll-target="#classification-methods-svm"><span class="header-section-number">7.1.2</span> Classification Methods &amp; SVM</a></li>
   </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">6.2</span> Application</a>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">7.2</span> Application</a>
   <ul class="collapse">
-  <li><a href="#insights-for-applications" id="toc-insights-for-applications" class="nav-link" data-scroll-target="#insights-for-applications"><span class="header-section-number">6.2.1</span> Insights for applications</a></li>
+  <li><a href="#insights-for-applications" id="toc-insights-for-applications" class="nav-link" data-scroll-target="#insights-for-applications"><span class="header-section-number">7.2.1</span> Insights for applications</a></li>
   </ul></li>
-  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">6.3</span> Reflections</a></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">7.3</span> Reflections</a></li>
   </ul>
 </nav>
     </div>
@@ -193,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification I</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification I</span></h1>
 </div>
 
 
@@ -208,8 +214,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="summary" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
+<section id="summary" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
 <p>This week was about classification, which basically is turning raw satellite imagery into something meaningful. Thus, instead of looking at raw images, classification lets us extract useful information by categorizing them into different classes like urban, vegetation, water, etc. This is done by using machine learning algorithms like Support Vector Machines (SVM) or Random Forest to analysis the pixel values and assign them to different classes.</p>
 <p>An example is the use of Landsat data to map urban growth. Taking the case of Iskandar, Malaysia (Figure 1), Landsat imagery was classified to show land cover types—like urban built-up areas, vegetation, and waterbodies (Yasin et al., 2022).</p>
 <div class="quarto-figure quarto-figure-center">
@@ -219,8 +225,8 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>Classification can be practically useful in monitoring city growth of time to uncover trends and use it for future planning.</p>
-<section id="choosing-the-right-sensor" class="level3" data-number="6.1.1">
-<h3 data-number="6.1.1" class="anchored" data-anchor-id="choosing-the-right-sensor"><span class="header-section-number">6.1.1</span> Choosing the Right Sensor</h3>
+<section id="choosing-the-right-sensor" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="choosing-the-right-sensor"><span class="header-section-number">7.1.1</span> Choosing the Right Sensor</h3>
 <p>The type of sensor used makes a big difference in how accurate your classification turns out. For instance, hyperspectral sensors can capture really fine details—perfect for plants species mapping or vegetation health. But for general land cover, a multispectral sensor like Landsat or Sentinel-2 might be enough. This is just like selecting a satellite based on the bands. Figure 2 shows highlights sensors to objectives.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -229,8 +235,8 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
-<section id="classification-methods-svm" class="level3" data-number="6.1.2">
-<h3 data-number="6.1.2" class="anchored" data-anchor-id="classification-methods-svm"><span class="header-section-number">6.1.2</span> Classification Methods &amp; SVM</h3>
+<section id="classification-methods-svm" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="classification-methods-svm"><span class="header-section-number">7.1.2</span> Classification Methods &amp; SVM</h3>
 <p>There are two basic types of classification methods:</p>
 <ul>
 <li>Classification trees – for categories like land cover</li>
@@ -248,8 +254,8 @@ ul.task-list li input[type="checkbox"] {
 <p>I will personally mostly use SVM for my classification tasks. Then use a Classification trees or Regression trees as a validation check and also figure out if my data is too big for SVM.</p>
 </section>
 </section>
-<section id="application" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> Application</h2>
+<section id="application" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
 <p>Support Vector Machines (SVM) have been widely applied in classification tasks. I will refer to two studies that used SVM in the context of urban analysis.</p>
 <p>The first study, by Zylshal et al.&nbsp;(2016), focused on identifying urban green spaces in Jakarta using high-resolution Pleiades-1A imagery. The classification process involved defining land cover classes—vegetation, non-vegetation, and water—followed by training the SVM model with a small dataset. Since SVM is a binary classifier, a “one-against-one” strategy was used to classify each pair of land cover types. Although the study did not state the exact input features, the data processing flowchart (figure 4) shows NDVI, NDWI and MSAVI used likely as input features, given their relevance in vegetation analysis.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -267,13 +273,13 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>To improve results, the model was tuned through kernel selection and parameter optimization. Because urban growth datasets are often imbalanced, with more unbuilt than built land, the study used strategic sampling to reduce bias. It achieved 78% accuracy, slightly lower than the first study, likely due to the larger dataset and the complexity of time-based prediction. SVM proved valuable in handling both continuous and categorical variables, making it well-suited for modeling urban growth trends.</p>
-<section id="insights-for-applications" class="level3" data-number="6.2.1">
-<h3 data-number="6.2.1" class="anchored" data-anchor-id="insights-for-applications"><span class="header-section-number">6.2.1</span> Insights for applications</h3>
+<section id="insights-for-applications" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="insights-for-applications"><span class="header-section-number">7.2.1</span> Insights for applications</h3>
 <p>Both studies applied SVM as a binary classifier, but their approaches differed. One focused on spatial classification, while the other tackled temporal change prediction. The second study likely dealt with a larger dataset, which might explain its lower accuracy, as SVM tends to perform better on smaller datasets. This raises the question of how well SVM scales for large-scale urban studies. A possible improvement would be enhancing SVM models with other machine learning techniques to handle large datasets more efficiently.</p>
 </section>
 </section>
-<section id="reflections" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">6.3</span> Reflections</h2>
+<section id="reflections" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">7.3</span> Reflections</h2>
 <p>This week deepened my understanding of how Support Vector Machines (SVM) are applied in urban classification tasks. Looking at both studies helped me see the flexibility—but also the limits—of the model.</p>
 <p>In the first study by Zylshal et al.&nbsp;(2016), the use of high-resolution imagery and indices like NDVI, NDWI, and MSAVI made sense for mapping urban green spaces in Jakarta. What stood out was the use of multiresolution segmentation—grouping pixels into meaningful objects before applying SVM. That, along with expert-based refinement, led to 86% accuracy, showing how SVM paired with Object-Based Image Analysis (OBIA) can be powerful in detailed, small-scale studies.</p>
 <p>In contrast, the second study by Karimi et al.&nbsp;(2019) focused on predicting urban expansion over time in North Carolina. It used broader datasets and aimed to model how “unbuilt” land becomes “built.” The team fine-tuned the model and applied strategic sampling to handle imbalanced classes—common in urban growth studies. While it achieved 78% accuracy, the lower performance reflects the challenges of using SVM on larger, more complex datasets.</p>
@@ -521,12 +527,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./chapter_5.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./chapter_7.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification II</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classification II</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
