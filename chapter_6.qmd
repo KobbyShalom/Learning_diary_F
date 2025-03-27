@@ -8,3 +8,28 @@ One example that really stood out was how Landsat data can be used to map urban 
 
 ![Fig 1. Landsat classified data on Iskandar Malaysia region](week_7/Iskandar_Malaysia_region.png)
 
+
+### Choosing the Right Sensor
+The type of sensor used makes a big difference in how accurate your classification turns out. For instance, hyperspectral sensors can capture really fine details—perfect for things like species mapping or vegetation health. But for general land cover, a multispectral sensor like Landsat or Sentinel-2 might be enough.
+
+Figure 2 shows how your objective should guide the sensor you choose. If you want an overview, go medium-res. If you’re digging deep into vegetation or urban trees, go high-res or hyperspectral. (Shahtahmassebi et al., 2020)
+
+![Fig 2. Mapping sensors to objectives. (Shahtahmassebi et al., 2020)](week_7/Mapping_sensors_to_objectives.png)
+
+### Classification Methods & SVM
+There are two basic types of classification methods:
+
+Classification trees – for categories like land cover
+Regression trees – for continuous data like temperature
+But both can suffer from overfitting—where the model works too well on the training data but fails on new input. To fix this, Support Vector Machines (SVM) are often used.
+
+SVM is a supervised machine learning model that finds the best boundary (called a hyperplane) between two classes—like urban and vegetation (see Figure 3). It’s great for high-dimensional data like hyperspectral imagery. It uses kernel functions (like RBF or polynomial) and parameters like C and gamma to tune the model (Mountrakis et al., 2011).
+
+
+SVMs perform well with small datasets and generalize better than trees or neural nets, though they’re slower with big data—where Random Forest or deep learning might be more practical.
+
+![Fig 3. Suppor)](week_7/Mapping_sensors_to_objectives.png)
+
+
+
+

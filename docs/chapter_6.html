@@ -171,7 +171,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#choosing-the-right-sensor" id="toc-choosing-the-right-sensor" class="nav-link active" data-scroll-target="#choosing-the-right-sensor"><span class="header-section-number">6.0.1</span> Choosing the Right Sensor</a></li>
+  <li><a href="#classification-methods-svm" id="toc-classification-methods-svm" class="nav-link" data-scroll-target="#classification-methods-svm"><span class="header-section-number">6.0.2</span> Classification Methods &amp; SVM</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -201,8 +208,32 @@ ul.task-list li input[type="checkbox"] {
 <figcaption class="figure-caption">Fig 1. Landsat classified data on Iskandar Malaysia region</figcaption>
 </figure>
 </div>
+<section id="choosing-the-right-sensor" class="level3" data-number="6.0.1">
+<h3 data-number="6.0.1" class="anchored" data-anchor-id="choosing-the-right-sensor"><span class="header-section-number">6.0.1</span> Choosing the Right Sensor</h3>
+<p>The type of sensor used makes a big difference in how accurate your classification turns out. For instance, hyperspectral sensors can capture really fine details—perfect for things like species mapping or vegetation health. But for general land cover, a multispectral sensor like Landsat or Sentinel-2 might be enough.</p>
+<p>Figure 2 shows how your objective should guide the sensor you choose. If you want an overview, go medium-res. If you’re digging deep into vegetation or urban trees, go high-res or hyperspectral. (Shahtahmassebi et al., 2020)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week_7/Mapping_sensors_to_objectives.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Fig 2. Mapping sensors to objectives. (Shahtahmassebi et al., 2020)</figcaption>
+</figure>
+</div>
+</section>
+<section id="classification-methods-svm" class="level3" data-number="6.0.2">
+<h3 data-number="6.0.2" class="anchored" data-anchor-id="classification-methods-svm"><span class="header-section-number">6.0.2</span> Classification Methods &amp; SVM</h3>
+<p>There are two basic types of classification methods:</p>
+<p>Classification trees – for categories like land cover Regression trees – for continuous data like temperature But both can suffer from overfitting—where the model works too well on the training data but fails on new input. To fix this, Support Vector Machines (SVM) are often used.</p>
+<p>SVM is a supervised machine learning model that finds the best boundary (called a hyperplane) between two classes—like urban and vegetation (see Figure 3). It’s great for high-dimensional data like hyperspectral imagery. It uses kernel functions (like RBF or polynomial) and parameters like C and gamma to tune the model (Mountrakis et al., 2011).</p>
+<p>SVMs perform well with small datasets and generalize better than trees or neural nets, though they’re slower with big data—where Random Forest or deep learning might be more practical.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week_7/Mapping_sensors_to_objectives.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Fig 3. Suppor)</figcaption>
+</figure>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
