@@ -179,6 +179,9 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#accuracy-assessment" id="toc-accuracy-assessment" class="nav-link" data-scroll-target="#accuracy-assessment"><span class="header-section-number">7.1.1</span> Accuracy Assessment</a></li>
   </ul></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">7.2</span> Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.3</span> Reflection</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference"><span class="header-section-number">7.4</span> Reference</a></li>
   </ul>
 </nav>
     </div>
@@ -225,11 +228,34 @@ ul.task-list li input[type="checkbox"] {
 <figcaption class="figure-caption">Fig. 2 Confusion matrix from Dynamic World</figcaption>
 </figure>
 </div>
-<p>Looking at Dynamic World, for instance, the model achieved 94% recall for water—meaning it detected most water pixels—but only 87% user accuracy, meaning some areas it labelled as water were not actually water on the ground. Averaging across all classes, the overall accuracy came to around 72%, which reflects the trade-off between global coverage and precision.</p>
-<p>This week reinforced how classification is never just about the algorithm—it’s also about trusting the output, especially when you didn’t build it yourself.</p>
-
-
+<p>Looking at Dynamic World, for instance, the model achieved 94% recall for water; meaning it detected most water pixels—but only 87% user accuracy; meaning some areas it labelled as water were not actually water on the ground. Averaging across all classes, the overall accuracy came to around 72%, which reflects the trade-off between global coverage and accuracy.</p>
+<p>There is another metric called the Kappa coefficient, which accounts for the agreement between the model and random chance. It’s a more robust measure than overall accuracy, especially when classes are imbalanced.</p>
 </section>
+</section>
+<section id="applications" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">7.2</span> Applications</h2>
+<p>For this week, I focus what methods they use for their sub pixel classification and how they validate their results. And reflect on trade-off between accuracy and coverage.</p>
+<p>The first study is by Suresh &amp; Jain (2018) explored subpixel classification on a small urban scale using high resolution QuickBird imagery (0.6m). They adopted two main methods, colorimetry and chromaticity diagrams.They used colorimetry, specifically the CIE-XYZ colour space, to model how colours within a pixel mix, estimating the proportions of different land cover types. Then, comparing chromatic distances between neighbouring pixels, they broke down mixed pixels more accurately. They validated their method using a Fuzzy Error Matrix, which showed better results than standard soft classifiers. This is shown the table below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week_8/Picture11.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Table. 1 Accuracy outputs comparing authors proposed and conventional approach</figcaption>
+</figure>
+</div>
+<p>Insights</p>
+<p>This is a unique method because it doesn’t rely om just spectral band but rather looks at how colours mix inside a pixel. I am wondering method might be bias when it has pixels with in low surfaces reflectance (water bodies) or surfaces with very similar colours. With high resolution sensor, I understand why it was utilized to classify urban cities on a small scale but I am not sure how well it would hold up across a larger area with many variation of colours.</p>
+<p>Also, I am curious on how it deals with shadows. Assessment test showed the method had a high accuracy in a urban setting, meaning the was able to classify even with the high presence of shadows. I think they try the method on a larger scale to see how well it performs as well.</p>
+</section>
+<section id="reflection" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
+<p>This week is last but one week with an entry for the learning diary. I haven’t had the chance to dive deeply into all the methods and models introduced in class, but I’ve come to realise that delving into a method in depth helps build real proficiency. That said, there’s a trade-off focusing deeply on a few methods can mean having only a surface level understanding of others. I think my approach is to understand the purpose of each method and its limitations. This way, I can decide when a method is appropriate and even explore how to combine these methods for better results. This week, I chose a paper that introduced a method we hadn’t covered in class, just to broaden my scope. The idea of classifying a pixel based on how colours mix within it was fascinating. It’s a different angle from the typical spectral-band-driven approaches.</p>
+<p>This week, I chose a paper that introduced a method we hadn’t covered in class, just to broaden my scope. The idea of classifying a pixel based on how colours mix within it was fascinating. It’s a different angle from the typical spectral-band-driven approaches.</p>
+</section>
+<section id="reference" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">7.4</span> Reference</h2>
+<p>Suresh, M., &amp; Jain, K. (2018). Subpixel level mapping of remotely sensed image using colorimetry. The Egyptian Journal of Remote Sensing and Space Sciences, 21(1), 65–72. https://doi.org/10.1016/j.ejrs.2017.02.004</p>
+
+
 </section>
 
 </main> <!-- /main -->
