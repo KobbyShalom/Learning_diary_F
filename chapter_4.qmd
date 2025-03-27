@@ -60,6 +60,29 @@ Ultimately, this system aligns with Ghana’s sustainable mining goals, protects
 
 ## Reflections
 
-what is the effect
+Illegal mining does not just affect ecosystems,it directly impacts towns and people. In Ghana, water pollution from galamsey operations have led to reduced water production by the Ghana Water Company. They stated the level of pollution is to high for they machines to treats hence closing some of the water treatment plants. Residents are also exposed to heavy metals and contaminated water, which can lead to long-term health issues.
 
-References
+What stands out is how Earth Observation (EO) could bridge the gap between policy and efficiency in policy enforcement. If implemented well, EO could help shift the response from reactive to proactive, targeting illegal operations before they cause irreversible damage.
+
+The use of EO would also promote transparency—a key issue in Ghana’s mining governance. A public dashboard could build trust between citizens and government, showing that enforcement is data-driven and fair.
+
+Finally, there’s potential for EO to empower local agencies and communities. With proper training, district assemblies could use satellite data to guide land use decisions and involve local people in environmental protection.
+
+This week showed me that remote sensing is not just about pixels and sensors—it’s a tool for environmental justice, urban resilience, and smarter governance.
+  
+## References
+Anti-galamsey task force destroys 10 Changfans other mining equipment on Pra River, 2024. URL https://citinewsroom.com/2024/10/operation-halt-anti-galamsey-task-force-destroys-mining-equipment-on-river-pra/ (accessed 3.10.25).
+
+Essah, M., 2022. Gold mining in Ghana and the UN Sustainable Development Goals: Exploring community perspectives on social and environmental injustices. Sustain. Dev. 30, 127–138. https://doi.org/10.1002/sd.2233
+
+Illegal mining menace: Sack Minerals Commission boss – CSOs to Mahama, 2025. . GhanaWeb. URL https://www.ghanaweb.com/GhanaHomePage/NewsArchive/(accessed (3.10.25).
+
+Kazapoe, R.W., Amuah, E.E.Y., Abdiwali, S.A., Dankwa, P., Nang, D.B., Kazapoe, J.P., Kpiebaya, P., 2023. Relationship between small-scale gold mining activities and water use in Ghana: A review of policy documents aimed at protecting water bodies in mining communities. Environ. Chall. 12, 100727. https://doi.org/10.1016/j.envc.2023.100727
+
+Ngom, N.M., Baratoux, D., Bolay, M., Dessertine, A., Abass Saley, A., Baratoux, L., Mbaye, M., Faye, G., Yao, A.K., Kouamé, K.J., 2023. Artisanal Exploitation of Mineral Resources: Remote Sensing Observations of Environmental Consequences, Social and Ethical Aspects. Surv. Geophys. 44, 225–247. https://doi.org/10.1007/s10712-022-09740-1
+
+Niroumand-Jadidi, M., Bovolo, F., Bruzzone, L., 2020. Water Quality Retrieval from PRISMA Hyperspectral Images: First Experience in a Turbid Lake and Comparison with Sentinel-2. Remote Sens. 12, 3984. https://doi.org/10.3390/rs12233984
+
+Savage, S., Conboye, J., Fray, K., Adeoye, A., Bhandari, A., 2025. How illegal gold mining is fuelling a chocolate shortage. Financ. Times.		
+
+
