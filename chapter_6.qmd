@@ -1,3 +1,10 @@
 ---
 title: "Classification I"
 ---
+
+This week was all about classification—basically turning raw satellite data into something meaningful. Thus, instead of just looking at images, classification lets us extract useful info to support things like urban planning, environmental monitoring, or resource management.
+
+One example that really stood out was how Landsat data can be used to map urban growth. Take the case of Iskandar, Malaysia (Figure 1), where Landsat imagery has been classified to show land cover types—like urban built-up areas, vegetation, and waterbodies (Yasin et al., 2022). By comparing this over time, you can see how the city is expanding and even use it for future planning.
+
+![Fig 1. Landsat classified data on Iskandar Malaysia region](week_7/Iskandar_Malaysia_region.png)
+

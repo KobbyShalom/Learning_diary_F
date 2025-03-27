@@ -34,12 +34,11 @@ While the exact method the anti-galamsey taskforce uses to identify illegal mini
 
 ### Paper 1: Water Quality Monitoring
 
-Niroumand-Jadidi, et al. (2020) assessed PRISMA hyperspectral imagery for retrieving water quality parameters, comparing it with Sentinel-2.  PRISMA’s more spectral bands as compare to Sentinel-2. This is shown in figure 2. This was used with the WASI (Water Colour Simulator) model to detect suspended materials. Since illegal mining is closely linked with river pollution, this makes PRISMA a powerful tool for identifying active mining areas.(Kazapoe et al., 2023).  
+Niroumand-Jadidi, et al. (2020) assessed PRISMA hyperspectral imagery for retrieving water quality parameters, comparing it with Sentinel-2. PRISMA’s more spectral bands as compare to Sentinel-2. This is shown in figure 2. This was used with the WASI (Water Colour Simulator) model to detect suspended materials. Since illegal mining is closely linked with river pollution, this makes PRISMA a powerful tool for identifying active mining areas.(Kazapoe et al., 2023).
 
 ![Fig. 2 PRISMA and Sentinel-2 Band Comparison](week_4/Bands_in_PRISMA_and_Sentinel-2.png)
 
 Water contamination often reflects mining activity—thus tracking turbidity, sediment, and color changes can help pinpoint illegal operations. Ghana’s water bodies are regularly affected, and the PRISMA sensor’s hyperspectral capacity makes it suitable for detecting subtle environmental changes missed by standard multispectral sensors.
-
 
 ![Fig. 3 Illegal mining near a river](week_4/galamsey_in_water_bodies.jpg)
 
@@ -49,8 +48,7 @@ Ngom et al. (2023) explored EO methods to monitor artisanal mining impacts like 
 
 ### Proposed Workflow
 
-Building on both papers, I propose a monitoring dashboard using data from Sentinel-2 (temporal coverage) and PRISMA (detailed sensing). EO data would be processed to flag suspicious changes in land use or water quality. These would be cross-referenced by partners like the Ghana Water Company and Forestry Commission, providing ground validation.
-![Data workflow](week_4/workflow_1.png)
+Building on both papers, I propose a monitoring dashboard using data from Sentinel-2 (temporal coverage) and PRISMA (detailed sensing). EO data would be processed to flag suspicious changes in land use or water quality. These would be cross-referenced by partners like the Ghana Water Company and Forestry Commission, providing ground validation. ![Data workflow](week_4/workflow_1.png)
 
 ![Dashboard workflow](week_4/workflow_2.png)
 
@@ -69,8 +67,9 @@ The use of EO would also promote transparency—a key issue in Ghana’s mining 
 Finally, there’s potential for EO to empower local agencies and communities. With proper training, district assemblies could use satellite data to guide land use decisions and involve local people in environmental protection.
 
 This week showed me that remote sensing is not just about pixels and sensors—it’s a tool for environmental justice, urban resilience, and smarter governance.
-  
+
 ## References
+
 Anti-galamsey task force destroys 10 Changfans other mining equipment on Pra River, 2024. URL https://citinewsroom.com/2024/10/operation-halt-anti-galamsey-task-force-destroys-mining-equipment-on-river-pra/ (accessed 3.10.25).
 
 Essah, M., 2022. Gold mining in Ghana and the UN Sustainable Development Goals: Exploring community perspectives on social and environmental injustices. Sustain. Dev. 30, 127–138. https://doi.org/10.1002/sd.2233
@@ -83,6 +82,4 @@ Ngom, N.M., Baratoux, D., Bolay, M., Dessertine, A., Abass Saley, A., Baratoux, 
 
 Niroumand-Jadidi, M., Bovolo, F., Bruzzone, L., 2020. Water Quality Retrieval from PRISMA Hyperspectral Images: First Experience in a Turbid Lake and Comparison with Sentinel-2. Remote Sens. 12, 3984. https://doi.org/10.3390/rs12233984
 
-Savage, S., Conboye, J., Fray, K., Adeoye, A., Bhandari, A., 2025. How illegal gold mining is fuelling a chocolate shortage. Financ. Times.		
-
-
+Savage, S., Conboye, J., Fray, K., Adeoye, A., Bhandari, A., 2025. How illegal gold mining is fuelling a chocolate shortage. Financ. Times.
