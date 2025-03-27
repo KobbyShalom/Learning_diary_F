@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning_diary_F - 4&nbsp; week 3</title>
+<title>Learning_diary_F - 4&nbsp; Remote sensing data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_3.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">week 3</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_3.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Remote sensing data</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -126,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">week 3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Remote sensing data</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -177,14 +177,22 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">4.1</span> Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">4.2</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">4.3</span> Reflection</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">week 3</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Remote sensing data</span></h1>
 </div>
 
 
@@ -199,8 +207,104 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="summary" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.1</span> Summary</h2>
+<p>This week’s session was mainly on image corrections and enhancement techniques. These are akey steps in preparing satellite imagery for analysis. Raw satellite data often has issues due to the sensor’s position, the Earth’s surface, or the atmosphere. Here is a summary of some of the issues and how they’re typically corrected:</p>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 44%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>❌ Error</th>
+<th>⚠️ Effect</th>
+<th>🛠️ Correction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>🧭 Geometric Distortion</td>
+<td>Features misaligned or warped</td>
+<td>Georeferencing / Orthorectification</td>
+</tr>
+<tr class="even">
+<td>🌞 Radiometric Distortion</td>
+<td>Pixel brightness doesn’t match real reflectance</td>
+<td>Radiometric Calibration</td>
+</tr>
+<tr class="odd">
+<td>☁️ Atmospheric Effects</td>
+<td>Haze/clouds distort pixel values</td>
+<td>Atmospheric Correction (TOA → BOA)</td>
+</tr>
+<tr class="even">
+<td>✂️ Seamline Artifacts</td>
+<td>Visible lines between image tiles</td>
+<td>Seamline Editing / Feathering</td>
+</tr>
+<tr class="odd">
+<td>🎨 Colour Mismatch</td>
+<td>Inconsistent brightness/tones between images</td>
+<td>Colour Balancing / Normalisation</td>
+</tr>
+</tbody>
+</table>
+<p>These corrections improve image consistency, making it possible for multi-temporal or multi-sensor analysis. This is particularly useful in urban studies where you might have to use different data types to achieve a task.</p>
+<p>We also touched on important terms on the corrections workflow:</p>
+<p>For 🔧 Corrections &amp; Calibration</p>
+<table class="table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 72%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>🛠️ Term</th>
+<th>💬 What It Means</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>📊 DN (Digital Number)</td>
+<td>Raw pixel value straight from the satellite sensor</td>
+</tr>
+<tr class="even">
+<td>💡 Radiance</td>
+<td>The actual energy (brightness) measured by the sensor — calculated from DN</td>
+</tr>
+<tr class="odd">
+<td>☀️ Reflectance</td>
+<td>How much sunlight the surface reflects — helps identify materials</td>
+</tr>
+<tr class="even">
+<td>☁️ TOA Reflectance</td>
+<td>What the satellite “sees” before atmospheric correction</td>
+</tr>
+<tr class="odd">
+<td>🌍 BOA Reflectance</td>
+<td>Reflectance after correcting for atmospheric effects — closer to surface truth</td>
+</tr>
+<tr class="even">
+<td>🧪 Radiometric Calibration</td>
+<td>Adjusting DN values to reflect real-world energy/brightness</td>
+</tr>
+</tbody>
+</table>
+<p>This week, I focused on TOA vs BOA reflectance. Many satellite products (like Sentinel-2 Level-1C) come in TOA form, which includes interference from the atmosphere. But for detailed analysis—like vegetation health, land cover classification, or urban change—BOA reflectance is essential. It gives a clearer, more accurate picture of what’s actually happening on the ground by removing distortions from haze, clouds, or sunlight angles. Without this correction, analyses can misrepresent real surface conditions, leading to flawed decisions or models.</p>
+</section>
+<section id="application" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="application"><span class="header-section-number">4.2</span> Application</h2>
+</section>
+<section id="reflection" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> Reflection</h2>
+<p>This week was filled with a lot of technical terms in remote sensing.</p>
+<p>It a very challenging trying to understand the terms used in the lecture. I focused on TOA and BOA reflectance because they relate to one the stress issues in remote sensing that is clouds. In a plane, you can see the cloud are most thick and if you view through the window you can not see the ground. This is the same with satellite but it is in a form of raleigh scattering. The scattering of light as it passes through to the atmosphere. This is also importance because some satellite data are in TOA reflectance and needs to be corrected to BOA reflectance to get the true reflectance of the earth surface.</p>
+<p>I was able to understand that TOA reflectance is the reflectance of the earth surface before atmospheric correction. While BOA reflectance is the reflectance of the earth surface after atmospheric correction. This is important because the atmosphere can distort the reflectance of the earth surface.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

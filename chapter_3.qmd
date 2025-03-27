@@ -1,3 +1,54 @@
 ---
-title: "week 3"
+title: "Remote sensing data"
 ---
+
+## Summary
+
+This week’s session was mainly on image corrections and enhancement techniques. These are akey steps in preparing satellite imagery for analysis. Raw satellite data often has issues due to the sensor's position, the Earth’s surface, or the atmosphere.  Here is a summary of some of the issues and  how they’re typically corrected:
+
+| ❌ Error                  | ⚠️ Effect                                       | 🛠️ Correction                       |
+|------------------|--------------------------------|----------------------|
+| 🧭 Geometric Distortion   | Features misaligned or warped                   | Georeferencing / Orthorectification |
+| 🌞 Radiometric Distortion | Pixel brightness doesn’t match real reflectance | Radiometric Calibration             |
+| ☁️ Atmospheric Effects    | Haze/clouds distort pixel values                | Atmospheric Correction (TOA → BOA)  |
+| ✂️ Seamline Artifacts     | Visible lines between image tiles               | Seamline Editing / Feathering       |
+| 🎨 Colour Mismatch        | Inconsistent brightness/tones between images    | Colour Balancing / Normalisation    |
+
+These corrections improve image consistency, making it possible for multi-temporal or multi-sensor analysis. This is particularly useful in urban studies where you might have to use different data types to achieve a task.
+
+We also touched on important terms on the corrections workflow:
+
+For 🔧 Corrections & Calibration
+
+| 🛠️ Term                    | 💬 What It Means                                                               |
+|--------------------|----------------------------------------------------|
+| 📊 DN (Digital Number)     | Raw pixel value straight from the satellite sensor                             |
+| 💡 Radiance                | The actual energy (brightness) measured by the sensor — calculated from DN     |
+| ☀️ Reflectance             | How much sunlight the surface reflects — helps identify materials              |
+| ☁️ TOA Reflectance         | What the satellite “sees” before atmospheric correction                        |
+| 🌍 BOA Reflectance         | Reflectance after correcting for atmospheric effects — closer to surface truth |
+| 🧪 Radiometric Calibration | Adjusting DN values to reflect real-world energy/brightness                    |
+
+This week, I focused on TOA vs BOA reflectance. Many satellite products (like Sentinel-2 Level-1C) come in TOA form, which includes interference from the atmosphere. But for detailed analysis—like vegetation health, land cover classification, or urban change—BOA reflectance is essential. It gives a clearer, more accurate picture of what's actually happening on the ground by removing distortions from haze, clouds, or sunlight angles. Without this correction, analyses can misrepresent real surface conditions, leading to flawed decisions or models.
+
+## Application
+
+
+
+
+
+
+## Reflection
+
+This week was filled with a lot of technical terms in remote sensing.
+
+It a very challenging trying to understand the terms used in the lecture. I focused on TOA and BOA reflectance because they relate to one the stress issues in remote sensing that is clouds. In a plane, you can see the cloud are most thick and if you view through the window you can not see the ground. This is the same with satellite but it is in a form of raleigh scattering. The scattering of light as it passes through to the atmosphere. 
+This is also importance because some satellite data are in TOA reflectance and needs to be corrected to BOA reflectance to get the true reflectance of the earth surface. 
+
+
+
+I was able to understand that TOA reflectance is the reflectance of the earth surface before atmospheric correction. While BOA reflectance is the reflectance of the earth surface after atmospheric correction. This is important because the atmosphere can distort the reflectance of the earth surface.
+
+
+
+

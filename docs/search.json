@@ -173,5 +173,26 @@
     "title": "9  SAR",
     "section": "9.3 Reflection",
     "text": "9.3 Reflection\nThis is the last week of the learning diary. I chose vessel detection as my focus because many major cities are built along the coast, and with the rise in personal boat ownership, there’s a growing need for better monitoring of maritime activity—from small crafts to large vessels.\nWhile going through the SAR-based detection studies, I found myself wondering: if SAR mainly detects surface texture, how does it spot ships during rough sea or stormy conditions? Does the radar band slightly penetrate the water or is the ship’s location just inferred from a prediction model using previous data?\nFrom the papers, it seems SAR can still detect ships directly—even under challenging conditions—and weather wasn’t really mentioned as a limitation. This suggests that the choice of wavelength or band plays a big role in how well SAR handles stormy seas. It also shows how deep learning paired with SAR is helping reduce those limitations, making ship detection more accurate and real-time.\nTo wrap it up, this week showed me that SAR isn’t just useful but its impact is great when applied well. And in a world where coastal cities are expanding fast, having tools like this could make a real difference in monitoring, security, and sustainability at sea."
+  },
+  {
+    "objectID": "chapter_3.html#summary",
+    "href": "chapter_3.html#summary",
+    "title": "4  Remote sensing data",
+    "section": "4.1 Summary",
+    "text": "4.1 Summary\nThis week’s session was mainly on image corrections and enhancement techniques. These are akey steps in preparing satellite imagery for analysis. Raw satellite data often has issues due to the sensor’s position, the Earth’s surface, or the atmosphere. Here is a summary of some of the issues and how they’re typically corrected:\n\n\n\n\n\n\n\n\n❌ Error\n⚠️ Effect\n🛠️ Correction\n\n\n\n\n🧭 Geometric Distortion\nFeatures misaligned or warped\nGeoreferencing / Orthorectification\n\n\n🌞 Radiometric Distortion\nPixel brightness doesn’t match real reflectance\nRadiometric Calibration\n\n\n☁️ Atmospheric Effects\nHaze/clouds distort pixel values\nAtmospheric Correction (TOA → BOA)\n\n\n✂️ Seamline Artifacts\nVisible lines between image tiles\nSeamline Editing / Feathering\n\n\n🎨 Colour Mismatch\nInconsistent brightness/tones between images\nColour Balancing / Normalisation\n\n\n\nThese corrections improve image consistency, making it possible for multi-temporal or multi-sensor analysis. This is particularly useful in urban studies where you might have to use different data types to achieve a task.\nWe also touched on important terms on the corrections workflow:\nFor 🔧 Corrections & Calibration\n\n\n\n\n\n\n\n🛠️ Term\n💬 What It Means\n\n\n\n\n📊 DN (Digital Number)\nRaw pixel value straight from the satellite sensor\n\n\n💡 Radiance\nThe actual energy (brightness) measured by the sensor — calculated from DN\n\n\n☀️ Reflectance\nHow much sunlight the surface reflects — helps identify materials\n\n\n☁️ TOA Reflectance\nWhat the satellite “sees” before atmospheric correction\n\n\n🌍 BOA Reflectance\nReflectance after correcting for atmospheric effects — closer to surface truth\n\n\n🧪 Radiometric Calibration\nAdjusting DN values to reflect real-world energy/brightness\n\n\n\nThis week, I focused on TOA vs BOA reflectance. Many satellite products (like Sentinel-2 Level-1C) come in TOA form, which includes interference from the atmosphere. But for detailed analysis—like vegetation health, land cover classification, or urban change—BOA reflectance is essential. It gives a clearer, more accurate picture of what’s actually happening on the ground by removing distortions from haze, clouds, or sunlight angles. Without this correction, analyses can misrepresent real surface conditions, leading to flawed decisions or models."
+  },
+  {
+    "objectID": "chapter_3.html#application",
+    "href": "chapter_3.html#application",
+    "title": "4  Remote sensing data",
+    "section": "4.2 Application",
+    "text": "4.2 Application"
+  },
+  {
+    "objectID": "chapter_3.html#reflection",
+    "href": "chapter_3.html#reflection",
+    "title": "4  Remote sensing data",
+    "section": "4.3 Reflection",
+    "text": "4.3 Reflection\nThis week was filled with a lot of technical terms in remote sensing.\nIt a very challenging trying to understand the terms used in the lecture. I focused on TOA and BOA reflectance because they relate to one the stress issues in remote sensing that is clouds. In a plane, you can see the cloud are most thick and if you view through the window you can not see the ground. This is the same with satellite but it is in a form of raleigh scattering. The scattering of light as it passes through to the atmosphere. This is also importance because some satellite data are in TOA reflectance and needs to be corrected to BOA reflectance to get the true reflectance of the earth surface.\nI was able to understand that TOA reflectance is the reflectance of the earth surface before atmospheric correction. While BOA reflectance is the reflectance of the earth surface after atmospheric correction. This is important because the atmosphere can distort the reflectance of the earth surface."
   }
 ]
