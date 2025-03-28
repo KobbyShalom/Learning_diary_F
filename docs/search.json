@@ -194,5 +194,26 @@
     "title": "4  Remote sensing data",
     "section": "4.3 Reflection",
     "text": "4.3 Reflection\nThis week’s lecture was packed with information and technical terms in remote sensing. Honestly, it was a bit challenging trying to fully grasp all the terminologies used in the lecture.\nI chose to focus on TOA and BOA reflectance because they connect to one of the trickiest issues in remote sensing: clouds. Just like when you’re in a plane and can see both clouds and the ground, satellites face the same challenge. As sunlight travels back to the satellite sensor, it gets partially blocked or scattered by particles in the atmosphere, like aerosols.\nThis is important because many satellite datasets are provided in TOA reflectance, which includes this interference. To get accurate information about the Earth’s surface, we need to correct it to BOA reflectance, which removes most of the atmospheric effects.\nSome questions that came to mind were:\nWhen exactly does the scattering happen?\nIs it when the sunlight reflects off the Earth and travels back through the atmosphere to the sensor?\nOr does it scatter on the way down to the surface too?\nI think the first is more likely, but I’m not entirely sure. It’s something I’d definitely like to explore more, especially how this impacts vegetation indices and urban analysis.\nAnother interesting thought is how this could be flipped—using the difference between TOA and BOA not just to improve surface analysis, but to study the atmosphere itself. For example, the gap between the two might help scientists track air pollution, smoke, or dust events, especially in areas without ground sensors. So in that sense, TOA data on its own could be useful—not for mapping land, but for understanding what’s happening above it."
+  },
+  {
+    "objectID": "chapter_5.html#summary",
+    "href": "chapter_5.html#summary",
+    "title": "6  Google Earth Engine",
+    "section": "6.1 Summary",
+    "text": "6.1 Summary"
+  },
+  {
+    "objectID": "chapter_5.html#application",
+    "href": "chapter_5.html#application",
+    "title": "6  Google Earth Engine",
+    "section": "6.2 Application",
+    "text": "6.2 Application"
+  },
+  {
+    "objectID": "chapter_5.html#reflection",
+    "href": "chapter_5.html#reflection",
+    "title": "6  Google Earth Engine",
+    "section": "6.3 Reflection",
+    "text": "6.3 Reflection"
   }
 ]
