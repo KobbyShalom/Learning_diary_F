@@ -6,7 +6,7 @@ project:
 book:
   title: "Learning_diary_F"
   author: "Shalom Kobby Ampiaw"
-  date: "11/03/2025"
+  date: "03/28/2025"
   chapters:
     - index.qmd
     - intro.qmd
