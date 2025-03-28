@@ -178,6 +178,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">6.1</span> Summary</a></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">6.2</span> Application</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.4</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -203,22 +204,43 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
-<p>This week was all about Google Earth Engine (GEE). It’s a powerful cloud-based platform that lets you analyse satellite data without downloading huge files. Instead of running things on your laptop, GEE does the heavy lifting for you online. We looked at how it makes working with remote sensing data easier, faster, and more accessible — especially for global-scale work.</p>
-<p>What really stood out for me was the shift from traditional desktop processing to cloud-based analysis. Before, you’d have to download loads of satellite data, clean it up, and then run it on your own machine — which takes forever and kills your laptop. But with GEE, the data’s already online, and the processing happens in the cloud. This means it runs faster and doesn’t depend on your computer’s power. I think this is a big deal, especially for people in places like Ghana where access to powerful machines can be limited. GEE basically opens the door for more people to do meaningful analysis, even on large datasets, without needing fancy tech setups. That feels like a huge game changer.</p>
+<p>This week was all about Google Earth Engine (GEE). It’s a powerful cloud-based platform that lets you analyse satellite data without downloading huge files. Instead of running things on your laptop, GEE does the heavy lifting for you online. We looked at how it makes working with remote sensing data easier, faster, and more accessible — especially for global-scale work. The video below gives an overview of Google Earth Engine (GEE).</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gKGOeTFHnKY?autoplay=1&amp;mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+<p>Source: <a href="https://www.youtube.com/watch?v=gKGOeTFHnKY">Google Earth Engine</a></p>
+<p>What really stood out for me was the shift from traditional desktop processing to cloud-based analysis. Instead of downloading loads of satellite data, cleaning it up, and then processing it on your machine, which takes forever and kills your laptop slowly, it is now done online. With GEE providing already cleaned and pre-processed data online, and with the capability to further process it to the project. This means it runs faster and doesn’t depend on your computer’s power. I think this is a big deal, especially for people in places like Ghana where cost of powerful machines can be high. GEE basically allow complex processing at faster speeds and larger volumes, inrespective of on an individual’s laptop.</p>
 </section>
 <section id="application" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> Application</h2>
-<p>To understand how GEE works in practice, I looked at two studies that used it for land cover classification and change detection — both with practical use in urban planning and sustainability.</p>
-<p>The first paper by Kamal et al.&nbsp;(2019) focused on monitoring land cover change in Dhaka, Bangladesh, from 1990 to 2017. They used Landsat imagery and ran a Random Forest classification through GEE. Everything from data access to processing was done in the cloud. That meant no downloading, no storage stress — just quick, consistent analysis over nearly three decades. Their output showed a massive shift from agricultural and forest areas to urban land. It was a good example of how GEE can scale analysis across time without complex infrastructure.</p>
-<p>The second study by Jin et al.&nbsp;(2019) took things a step further. They built a 30-meter global land cover map using over 1 million Landsat images — all processed within GEE. They used supervised classification and trained their model using samples collected from multiple sources. What stood out was how GEE let them handle such a large dataset with relative ease. The platform allowed for global-scale mapping, which would’ve been nearly impossible using local machines.</p>
-<p>Both studies showed how GEE makes remote sensing more accessible, especially for researchers and policymakers in the Global South. It reduces technical barriers and speeds up workflows without sacrificing accuracy. I can definitely see how this could be used for urban planning in Ghana — tracking informal settlements, land-use conflicts, or even flood zones over time.</p>
+<p>For this week’s application, I wanted to see how GEE is used in real-world studies. I will look a study that used it for GEE for classification analysis.</p>
+<p>The first study is by Lodato et al (2023) who focused on the analyses of the spatiotemporal urban expansion of the Rome coastline. They used Landsat multispectral imagery from 1985 to 2020 from GEE which was used to quantified urban expansion by classification.</p>
+<p>GEE was used for cloud masking, creating median image composites, calculating NDVI and SwiRed indices, and implementing the Random Forest (RF) algorithm for classification. The general workflow is shown in figure 1.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week_6/Picture1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Fig.1 Analysis workflow (Lodato et al., 2023)</figcaption>
+</figure>
+</div>
+<p>The outcomes highlighted a significant increase in “Urban” and “Woodland” areas and quantified landscape transformations As shown in figure 2.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week_6/Picture2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Fig.2 Analysis workflow (Lodato et al., 2023)</figcaption>
+</figure>
+</div>
+<p>This study was carried out the analysis on GEE. This shows, GEE can process large volumes of data. However, the study also carried out the accuracy assessment on GEE. Considering how GEE does not give the user explict details on how it carries it’s anaylsis, a safe guard would be to carry out the accuracy assessment on another platform to ensure the results are reliable.</p>
 </section>
 <section id="reflection" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
-<p>Honestly, I really like the idea behind Google Earth Engine. It removes a lot of the barriers that come with remote sensing — like needing a high-spec laptop or dealing with slow downloads. Everything’s just there and ready to use. I can definitely see how this could be super useful in Ghana, especially for government agencies or local researchers who may not have access to powerful machines but still want to monitor things like illegal mining, urban sprawl, or deforestation.</p>
-<p>What surprised me was how quick the results came through. With just a bit of JavaScript, you can visualise changes over time or run NDVI analysis in seconds. I’m still getting used to the coding part, but it feels way more approachable than I expected.</p>
-<p>One thing I’m still wondering about, though, is what happens when internet access isn’t stable. Like, would this be fully reliable in rural areas where connections drop often? And also, what’s the long-term sustainability of using a free cloud service run by a private company? Those are things I’d want to look into more.</p>
-<p>But overall, this week made me feel like big, global-scale analysis is no longer just for people with big funding or expensive hardware. That’s a win.</p>
+<p>Just like the first week, I decided to make this week’s more about GEE as a product and its applications by looking at a relevant study.</p>
+<p>I like the idea behind Google Earth Engine. It removes a lot of the barriers that come with remote sensing — like needing a good laptop or complicated codes for analysis. Everything’s just there and ready to use.</p>
+<p>Also, the way GEE simplifies code into easy functions and produces quick visuals makes me think it could even be used to teach remote sensing at the primary school level in Ghana. A lot of subjects aren’t taught in detail at that level because they’re seen as too complex, even though their real-world applications are discussed. So having a platform like GEE, where you can analyse and visualise data from one place with minimal technical effort, feels like a real game changer.</p>
+<p>One thing I’m still curious about is what happens when internet access isn’t stable. Would GEE still be reliable in rural areas where the connection drops often? Also, since it’s a free platform run by a private company, what’s the long-term sustainability? These are definitely questions worth thinking about.</p>
+<p>Overall, even though I think GEE is great for detailed analysis, I would personally prefer running some things locally, especially for sensitive or resource-heavy tasks.</p>
+</section>
+<section id="references" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="references"><span class="header-section-number">6.4</span> References</h2>
+<p>Lodato, F., Colonna, N., Pennazza, G., Praticò, S., Santonico, M., Vollero, L., Pollino, M., 2023. Analysis of the Spatiotemporal Urban Expansion of the Rome Coastline through GEE and RF Algorithm, Using Landsat Imagery. ISPRS Int. J. Geo-Inf. 12, 141. https://doi.org/10.3390/ijgi12040141</p>
 
 
 </section>
