@@ -48,13 +48,13 @@ The author also discussed different SAR modes, which affect how much area is cap
 
 -   Fully Polarimetric SAR: Uses multiple polarizations (HH, HV, VH, VV), giving richer data for separating ships from sea clutter.
 
-![Fig. 1 HH-, HV-, and VV-polarizations](week_9/Picture13.png)
+![Fig. 1 HH-, HV-, and VV-polarizations (Ouchi, 2016)](week_9/Picture13.png){width="384"}
 
 HV provides the strongest ship-to-background contrast.
 
 The second study by Yasir et al. (2024) demonstrated ship detection using Gaofen-3 SAR imagery (1m resolution) with a YOLOv8 model for detection and a C-BIOU tracker for following ships over time.
 
-![Fig. 2 Workflow of the ship tracking model](week_9/Picture12.jpg)
+![Fig. 2 Workflow of the ship tracking model (Yasir et al., 2024)](week_9/Picture12.jpg)
 
 The second study by Yasir et al. (2024) demonstrated ship detection using Gaofen-3 SAR imagery (1m resolution) with a YOLOv8 model for detection and a C-BIOU tracker for following ships over time.
 

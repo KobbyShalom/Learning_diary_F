@@ -165,12 +165,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -191,6 +185,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#insights-for-applications" id="toc-insights-for-applications" class="nav-link" data-scroll-target="#insights-for-applications"><span class="header-section-number">7.2.1</span> Insights for applications</a></li>
   </ul></li>
   <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections"><span class="header-section-number">7.3</span> Reflections</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.4</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -221,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="week_7/Iskandar_Malaysia_region.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Fig 1. Landsat classified data on Iskandar Malaysia region</figcaption>
+<figcaption class="figure-caption">Fig 1. Landsat classified data on Iskandar Malaysia region (Yasin et al., 2022)</figcaption>
 </figure>
 </div>
 <p>Classification can be practically useful in monitoring city growth of time to uncover trends and use it for future planning.</p>
@@ -247,7 +242,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="week_7/SVM.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Fig 3. SVM Hyperplane boundary</figcaption>
+<figcaption class="figure-caption">Fig 3. SVM Hyperplane boundary (Mountrakis et al., 2011)</figcaption>
 </figure>
 </div>
 <p>SVMs perform well with small datasets and generalize better than decision trees and neural networks, though they’re slower with big data—where Random Forest or deep learning might be more practical.</p>
@@ -261,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="week_7/data_flowchart.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Fig 4. Data processing flowchart</figcaption>
+<figcaption class="figure-caption">Fig 4. Data processing flowchart (Zylshal et al., 2016)</figcaption>
 </figure>
 </div>
 <p>Instead of classifying individual pixels, the study used multiresolution segmentation to group pixels into meaningful objects before applying classification. The output was further refined using expert rules and validated through an accuracy assessment, achieving 86% accuracy. This study effectively demonstrated the integration of SVM with Object-Based Image Analysis (OBIA) for high-resolution classification.</p>
@@ -269,7 +264,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="week_7/Binary_classification_of_simulated_LULC_map_in_2016.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Fig 5. Binary classification of simulated LULC map in 2016</figcaption>
+<figcaption class="figure-caption">Fig 5. Binary classification of simulated LULC map in 2016 (Karimi et al., 2019)</figcaption>
 </figure>
 </div>
 <p>To improve results, the model was tuned through kernel selection and parameter optimization. Because urban growth datasets are often imbalanced, with more unbuilt than built land, the study used strategic sampling to reduce bias. It achieved 78% accuracy, slightly lower than the first study, likely due to the larger dataset and the complexity of time-based prediction. SVM proved valuable in handling both continuous and categorical variables, making it well-suited for modeling urban growth trends.</p>
@@ -286,6 +281,10 @@ ul.task-list li input[type="checkbox"] {
 <p>What I found interesting is that both studies relied on SVM as a binary classifier, yet their outcomes varied based on scale, data volume, and focus—spatial vs.&nbsp;temporal. This raised an important question: how scalable is SVM for large-scale urban analysis?</p>
 <p>SVM works well with limited, high-quality data, but in broader applications like national urban expansion studies, it might struggle with processing speed and generalization. A key takeaway is that SVM could be enhanced by hybrid approaches, for instance, integrating it with Random Forest, neural networks, or rule-based methods for better scalability.</p>
 <p>Overall, this week showed me that classification is not just a technical process—it’s about tailoring tools to fit data types, goals, and scale, and SVM is just one part of a growing toolbox in urban remote sensing.</p>
+</section>
+<section id="references" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="references"><span class="header-section-number">7.4</span> References</h2>
+<p>Karimi, F., Sultana, S., Shirzadi Babakan, A., Suthaharan, S., 2019. An enhanced support vector machine model for urban expansion prediction. Comput. Environ. Urban Syst. 75, 61–75. https://doi.org/10.1016/j.compenvurbsys.2019.01.001 Mountrakis, G., Im, J., Ogole, C., 2011. Support vector machines in remote sensing: A review. ISPRS J. Photogramm. Remote Sens. 66, 247–259. https://doi.org/10.1016/j.isprsjprs.2010.11.001 Shahtahmassebi, A., Li, C., Yifan, F., Wu, Y., Lin, Y., Gan, M., Wang, K., Malik, A., Blackburn, A., 2020. Remote sensing of urban green spaces: A review. Urban For. Urban Green. 57, 126946. https://doi.org/10.1016/j.ufug.2020.126946 Yasin, M.Y., Abdullah, J., Noor, Norzailawati Mohd, Yusoff, M.M., Noor, Nisfariza Mohd, 2022. Landsat observation of urban growth and land use change using NDVI and NDBI analysis. IOP Conf. Ser. Earth Environ. Sci. 1067, 012037. https://doi.org/10.1088/1755-1315/1067/1/012037 Yu, W., Liu, T., Valdez, R., Gwinn, M., Khoury, M.J., 2010. Application of support vector machine modeling for prediction of common diseases: the case of diabetes and pre-diabetes. BMC Med. Inform. Decis. Mak. 10, 16. https://doi.org/10.1186/1472-6947-10-16 Zylshal, Sulma, S., Yulianto, F., Nugroho, J.T., Sofan, P., 2016a. A support vector machine object based image analysis approach on urban green space extraction using</p>
 
 
 </section>

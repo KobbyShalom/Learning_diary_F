@@ -165,12 +165,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -189,6 +183,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#insights" id="toc-insights" class="nav-link" data-scroll-target="#insights"><span class="header-section-number">4.2.3</span> Insights</a></li>
   </ul></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">4.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.4</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -217,40 +212,40 @@ ul.task-list li input[type="checkbox"] {
 <p>This week’s session was mainly on image corrections and enhancement techniques. These are akey steps in preparing satellite imagery for analysis. Raw satellite data often has issues due to the sensor’s position, the Earth’s surface, or the atmosphere. Here is a summary of some of the issues and how they’re typically corrected:</p>
 <table class="table">
 <colgroup>
-<col style="width: 25%">
+<col style="width: 21%">
 <col style="width: 44%">
-<col style="width: 30%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>❌ Error</th>
-<th>⚠️ Effect</th>
-<th>🛠️ Correction</th>
+<th>Error</th>
+<th>Effect</th>
+<th>Correction</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>🧭 Geometric Distortion</td>
+<td>Geometric Distortion</td>
 <td>Features misaligned or warped</td>
 <td>Georeferencing / Orthorectification</td>
 </tr>
 <tr class="even">
-<td>🌞 Radiometric Distortion</td>
+<td>Radiometric Distortion</td>
 <td>Pixel brightness doesn’t match real reflectance</td>
 <td>Radiometric Calibration</td>
 </tr>
 <tr class="odd">
-<td>☁️ Atmospheric Effects</td>
+<td>Atmospheric Effects</td>
 <td>Haze/clouds distort pixel values</td>
 <td>Atmospheric Correction (TOA → BOA)</td>
 </tr>
 <tr class="even">
-<td>✂️ Seamline Artifacts</td>
+<td>Seamline Artifacts</td>
 <td>Visible lines between image tiles</td>
 <td>Seamline Editing / Feathering</td>
 </tr>
 <tr class="odd">
-<td>🎨 Colour Mismatch</td>
+<td>Colour Mismatch</td>
 <td>Inconsistent brightness/tones between images</td>
 <td>Colour Balancing / Normalisation</td>
 </tr>
@@ -258,41 +253,41 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>These corrections improve image consistency, making it possible for multi-temporal or multi-sensor analysis. This is particularly useful in urban studies where you might have to use different data types to achieve a task.</p>
 <p>We also touched on important terms on the corrections workflow:</p>
-<p>For 🔧 Corrections &amp; Calibration</p>
+<p>For Corrections &amp; Calibration</p>
 <table class="table">
 <colgroup>
-<col style="width: 27%">
-<col style="width: 72%">
+<col style="width: 23%">
+<col style="width: 76%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>🛠️ Term</th>
-<th>💬 What It Means</th>
+<th>Term</th>
+<th>What It Means</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>📊 DN (Digital Number)</td>
+<td>DN (Digital Number)</td>
 <td>Raw pixel value straight from the satellite sensor</td>
 </tr>
 <tr class="even">
-<td>💡 Radiance</td>
+<td>Radiance</td>
 <td>The actual energy (brightness) measured by the sensor — calculated from DN</td>
 </tr>
 <tr class="odd">
-<td>☀️ Reflectance</td>
+<td>Reflectance</td>
 <td>How much sunlight the surface reflects — helps identify materials</td>
 </tr>
 <tr class="even">
-<td>☁️ TOA Reflectance</td>
+<td>TOA Reflectance</td>
 <td>What the satellite “sees” before atmospheric correction</td>
 </tr>
 <tr class="odd">
-<td>🌍 BOA Reflectance</td>
+<td>BOA Reflectance</td>
 <td>Reflectance after correcting for atmospheric effects — closer to surface truth</td>
 </tr>
 <tr class="even">
-<td>🧪 Radiometric Calibration</td>
+<td>Radiometric Calibration</td>
 <td>Adjusting DN values to reflect real-world energy/brightness</td>
 </tr>
 </tbody>
@@ -308,14 +303,14 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="week_3/image-2.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Fig. 1 Sentinel-2 scene from Tampere</figcaption>
+<figcaption class="figure-caption">Fig. 1 Sentinel-2 scene from Tampere (Lauri, 2019)</figcaption>
 </figure>
 </div>
 <p>The finding of the study showed that NDVI calculated from BOA reflectance is consistently higher and more reliable than from TOA, as shown in figure 2. This makes sense because TOA includes atmospheric interference like haze and scattering, which can reduce apparent greenness.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="week_3/picture14.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Fig. 2 NDVI(BOA) vs.&nbsp;NDVI(TOA)</figcaption>
+<figcaption class="figure-caption">Fig. 2 NDVI(BOA) vs.&nbsp;NDVI(TOA) (Lauri, 2019)</figcaption>
 </figure>
 </div>
 <p>So, for something like crop monitoring or tracking urban vegetation, relying on TOA reflectance could understate actual plant health, while BOA gives a sincerer picture. This goes to show how the atmospheric correction can impact the findings of the data.</p>
@@ -348,6 +343,11 @@ ul.task-list li input[type="checkbox"] {
 <p>Or does it scatter on the way down to the surface too?</p>
 <p>I think the first is more likely, but I’m not entirely sure. It’s something I’d definitely like to explore more, especially how this impacts vegetation indices and urban analysis.</p>
 <p>Another interesting thought is how this could be flipped—using the difference between TOA and BOA not just to improve surface analysis, but to study the atmosphere itself. For example, the gap between the two might help scientists track air pollution, smoke, or dust events, especially in areas without ground sensors. So in that sense, TOA data on its own could be useful—not for mapping land, but for understanding what’s happening above it.</p>
+</section>
+<section id="references" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="references"><span class="header-section-number">4.4</span> References</h2>
+<p>Lauri, 2019. NDVI(BOA) vs.&nbsp;NDVI(TOA) [WWW Document]. Terramonitor Feed. URL https://feed.terramonitor.com/ndvi-boa-ndvi-toa/ (accessed 3.28.25).</p>
+<p>Nazeer, M., Ilori, C.O., Bilal, M., Nichol, J.E., Wu, W., Qiu, Z., Gayene, B.K., 2021. Evaluation of atmospheric correction methods for low to high resolutions satellite remote sensing data. Atmospheric Res. 249, 105308. https://doi.org/10.1016/j.atmosres.2020.105308</p>
 
 
 </section>

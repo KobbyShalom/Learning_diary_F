@@ -19,7 +19,6 @@ book:
     - chapter_7.qmd
     - chapter_8.qmd
     - summary.qmd
-    - references.qmd
 
 bibliography: references.bib
 

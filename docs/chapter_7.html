@@ -165,12 +165,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -218,20 +212,20 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="week_8/zoomed_in_pixel.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Fig. 1 A zoomed-in pixel showing buildings, vegetation, and roads</figcaption>
+<figcaption class="figure-caption">Fig. 1 A zoomed-in pixel showing buildings, vegetation, and roads (MacLachlan et al., 2017)</figcaption>
 </figure>
 </div>
 <p>Sub-pixel analysis is especially useful in urban fringe areas, where land cover is complex and mixed. But it also raises new challenges around validation and reliability. That leads us into the importance of accuracy assessment.</p>
 <section id="accuracy-assessment" class="level3" data-number="8.1.1">
 <h3 data-number="8.1.1" class="anchored" data-anchor-id="accuracy-assessment"><span class="header-section-number">8.1.1</span> Accuracy Assessment</h3>
 <p>In remote sensing, three key metrics help evaluate performance:</p>
-<p>Producer Accuracy – How well the model captures a class based on reference data <img src="week_8/Picture8.png" class="img-fluid"></p>
-<p>User Accuracy – How likely the modelled class is correct when visited on the ground<img src="week_8/Picture9.png" class="img-fluid"></p>
-<p>Overall Accuracy – The total correct classifications across all classes <img src="week_8/Picture10.png" class="img-fluid"></p>
+<p>Producer Accuracy – How well the model captures a class based on reference data <img src="week_8/Picture8.png" width="30" height="11"></p>
+<p>User Accuracy – How likely the modelled class is correct when visited on the ground<img src="week_8/Picture9.png" width="30" height="12"></p>
+<p>Overall Accuracy – The total correct classifications across all classes <img src="week_8/Picture10.png" width="30" height="12"></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="week_8/Picture6.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Fig. 2 Confusion matrix from Dynamic World</figcaption>
+<figcaption class="figure-caption">Fig. 2 Confusion matrix from Dynamic World (Brown et al., 2022)</figcaption>
 </figure>
 </div>
 <p>Looking at Dynamic World, for instance, the model achieved 94% recall for water; meaning it detected most water pixels—but only 87% user accuracy; meaning some areas it labelled as water were not actually water on the ground. Averaging across all classes, the overall accuracy came to around 72%, which reflects the trade-off between global coverage and accuracy.</p>
@@ -245,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="week_8/Picture11.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Table. 1 Accuracy outputs comparing authors proposed and conventional approach</figcaption>
+<figcaption class="figure-caption">Table. 1 Accuracy outputs comparing authors proposed and conventional approach (Suresh and Jain, 2018)</figcaption>
 </figure>
 </div>
 <p>Insights</p>
@@ -259,7 +253,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="reference" class="level2" data-number="8.4">
 <h2 data-number="8.4" class="anchored" data-anchor-id="reference"><span class="header-section-number">8.4</span> Reference</h2>
-<p>Suresh, M., &amp; Jain, K. (2018). Subpixel level mapping of remotely sensed image using colorimetry. The Egyptian Journal of Remote Sensing and Space Sciences, 21(1), 65–72. https://doi.org/10.1016/j.ejrs.2017.02.004</p>
+<p>Brown, C.F., Brumby, S.P., Guzder-Williams, B., Birch, T., Hyde, S.B., Mazzariello, J., Czerwinski, W., Pasquarella, V.J., Haertel, R., Ilyushchenko, S., Schwehr, K., Weisse, M., Stolle, F., Hanson, C., Guinan, O., Moore, R., Tait, A.M., 2022. Dynamic World, Near real-time global 10 m land use land cover mapping. Sci. Data 9, 251. https://doi.org/10.1038/s41597-022-01307-4</p>
+<p>MacLachlan, A., Roberts, G., Biggs, E., Boruff, B., 2017. Subpixel land-cover classification for improved urban area estimates using Landsat. Int. J. Remote Sens. 38, 5763–5792. https://doi.org/10.1080/01431161.2017.1346403</p>
+<p>Suresh, M., Jain, K., 2018. Subpixel level mapping of remotely sensed image using colorimetry. Egypt. J. Remote Sens. Space Sci. 21, 65–72. https://doi.org/10.1016/j.ejrs.2017.02.004</p>
 
 
 </section>

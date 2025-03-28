@@ -6,11 +6,17 @@ title: "Introduction to Remote Sensing & Satellite Data"
 
 I currently understand remote sensing as the process of gathering information about the Earth's surface without direct contact. This is done through passive sensors (like satellite imagery) and active sensors (like LiDAR and RADAR). Passive sensors detect reflected sunlight, while active ones send out pulses (e.g., lasers) and measure what bounces back. Both rely on electromagnetic waves. Remote sensing is often combined with GIS to analyse landscapes, land cover, urban areas, and environmental change. The combination of these techniques, and the data they produce, enables environmental monitoring, resource management, and biodiversity conservation at different spatial scales. Figure 1 summarizes it all.
 
-![Fig.1 Overview of Remote Sensing](week_1/download2.PNG)
+![Fig.1 Overview of Remote Sensing (Kerry et al., 2022)](week_1/download2.PNG)
 
 What caught my attention this week was the role of satellites—these suspended systems orbiting Earth. Remote sensing and satellites go hand-in-hand, but I hadn’t really considered the different types before. There are:
 
-Geostationary satellites – stationary, mainly used for weather, telecoms, and large-scale monitoring. Low Earth Orbit (LEO) satellites – used for high-resolution imaging, orbiting 160–2,000 km above Earth. Sun-synchronous (polar) satellites – orbit Earth in sync with the sun, useful for consistent scientific observations. The sun-synchronous satellites, especially Sentinel-2 and Landsat-8, stood out to me because they’re both widely used in environmental monitoring. Here's a brief comparison:
+-   Geostationary satellites – stationary, mainly used for weather, telecoms, and large-scale monitoring.
+
+-   Low Earth Orbit (LEO) satellites – used for high-resolution imaging, orbiting 160–2,000 km above Earth.
+
+-   Sun-synchronous (polar) satellites – orbit Earth in sync with the sun, useful for consistent scientific observations.
+
+The sun-synchronous satellites, especially Sentinel-2 and Landsat-8, stood out to me because they’re both widely used in environmental monitoring. Here's a brief comparison:
 
 | Feature      | Landsat-8 | Sentinel-2 |
 |--------------|-----------|------------|
@@ -20,7 +26,7 @@ Geostationary satellites – stationary, mainly used for weather, telecoms, and 
 
 A term that I think will keep coming up is bands. Bands are like filters for specific wavelengths of light. Each band captures data differently, and depending on which are available, a satellite may be better suited for certain tasks. For instance, near-infrared is good for vegetation monitoring, while shortwave infrared helps with detecting soil moisture. Looking at the image here (figure 2),
 
-![Fig. 2 Comparison of Landsat 7 and 8 bands with Sentinel-2](week_1/Comparison_of%20Landsat_7_and_8_bands_with_Sentinel-2.png)
+![Fig. 2 Comparison of Landsat 7 and 8 bands with Sentinel-2 (Earth Resources Observation and Science (EROS) Center, 2019)](week_1/Comparison_of%20Landsat_7_and_8_bands_with_Sentinel-2.png)
 
 I noticed that while both satellites share some bands, they also have unique ones. For example, Landsat-8 includes a Thermal Infrared Sensor (TIRS) which Sentinel-2 lacks—this means Landsat can provide thermal data like land surface temperature (LST), which is valuable in urban heat studies.
 
@@ -28,7 +34,9 @@ Understanding bands will be key in selecting the right satellite for different t
 
 ## Application
 
-For this section, I wanted to use what I learned in the summary to figure out which satellite is more suitable for land cover classification. A study by Ahady, A.B. and Kaplan, G. compared Landsat-8 and Sentinel-2 data over the city of Kabul, focusing on classification accuracy across four land cover types: water, cropland, urban, and bare land.
+For this section, I wanted to use what I learned in the summary to figure out which satellite is more suitable for land cover classification.
+
+A study by Ahady, A.B. and Kaplan, G. compared Landsat-8 and Sentinel-2 data over the city of Kabul, focused on classification accuracy across four land cover types: water, cropland, urban, and bare land. This was done using Support Vector Machine (SVM) classifier.
 
 Key insights
 
@@ -37,9 +45,9 @@ Key insights
 
 Let’s look at the outputs:
 
-![Fig. 3 Landsat-8’s imagery](week_1/Landsat-8_classification.png)
+![Fig. 3 Landsat-8’s imagery of Kabul city generated on Apr-June 2020 (Ahady and Kaplan, 2022)](week_1/Landsat-8_classification.png)
 
-![Fig. 4 Sentinel-2 imagery](week_1/Sentinel-2_classification.png)
+![Fig. 4 Sentinel-2 imagery of Kabul city generated on Apr-June 2020 (Ahady and Kaplan, 2022)](week_1/Sentinel-2_classification.png)
 
 From the images, it’s clear that Sentinel-2 (Figure 4) shows finer detail compared to Landsat-8 (Figure 3). One major reason could be the spatial resolution—Sentinel-2 has higher resolution, which allows it to define features more clearly, especially in urban and mixed-use areas. That likely contributes to its higher classification accuracy.
 
@@ -60,3 +68,13 @@ Something I’ve been thinking about is whether we can combine Landsat and Senti
 Remote sensing, I believe will have more impact in developing countries. Ghana as a developing country could benefit from as it can monitor the land use, deforestation, and pollution. This could help in planning and decision-making. For instance, the Sentinel-5P satellite can monitor pollution levels in the atmosphere. This could be useful in Accra, where pollution levels are high.
 
 Also, about SNAP—yeah, that practical was rough. Clunky interface, laggy tools, not fun. But I did get a feel for the kind of hands-on work remote sensing really involves.
+
+## References
+
+Earth Resources Observation and Science (EROS) Center, 2024. Remote Sensing Satellites. URL https://satpalda.com/remote-sensing-satellites/, https://satpalda.com/remote-sensing-satellites/ (accessed 3.28.25).
+
+Ahady, A.B., Kaplan, G., 2022. Classification comparison of Landsat-8 and Sentinel-2 data in Google Earth Engine, study case of the city of Kabul. Int. J. Eng. Geosci. 7, 24–31. https://doi.org/10.26833/ijeg.860077
+
+Earth Resources Observation and Science (EROS) Center, 2019. Comparison of Landsat 7 and 8 bands with Sentinel-2 \| U.S. Geological Survey \[WWW Document\]. URL https://www.usgs.gov/media/images/comparison-landsat-7-and-8-bands-sentinel-2 (accessed 3.28.25).
+
+Kerry, R.G., Montalbo, F.J.P., Das, R., Patra, S., Mahapatra, G.P., Maurya, G.K., Nayak, V., Jena, A.B., Ukhurebor, K.E., Jena, R.C., Gouda, S., Majhi, S., Rout, J.R., 2022. An overview of remote monitoring methods in biodiversity conservation. Environ. Sci. Pollut. Res. 29, 80179–80221. https://doi.org/10.1007/s11356-022-23242-y

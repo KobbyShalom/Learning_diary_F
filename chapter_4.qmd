@@ -6,25 +6,25 @@ title: "Galamsey"
 
 ### Introduction
 
-The system in Ghana is a unique system where policies are mainly created by the central government. The implementation of the policy is through the ministries. The mainly create taskforce with the police to enforce it.
+The system in Ghana is a unique system where policies are mainly created by the central government. The implementation of the policy is normally through the ministries. They mostly create taskforce and together with the police, enforce it.
 
 ### Background
 
-For this week, I want to look at the illegal mining commonly known as Galamsey. Ghana currently battling illegal mining being a mineral rich country. These minerals especially gold contributes a major part of the nation’s GDP. This reflects in Ghana being the 6th producer of Gold in 2024. The issue comes at a time where the prices of gold are at an all-time high. (Savage et al., 2025) This is shown in the graph below.
+For this week, I want to look at the illegal mining commonly known as Galamsey - (term is locally created from the phrase "gather and sell" - "Galamsey"). Ghana currently battling illegal mining being a mineral rich country. These minerals especially gold contributes a major part of the nation’s GDP. This reflects in Ghana being the 6th producer of Gold in 2024. The issue comes at a time where the prices of gold are at an all-time high. (Savage et al., 2025) This is shown in the graph below.
 
-![Fig. 1 Statistics on Gold production](week_4/Ghana's_gold_production.png)
+![Fig. 1 Statistics on Gold production (Savage et al., 2025)](week_4/Ghana_gold_production.png)
 
 Even though there are policies regulating mining activities, the country faces the impacts of galamsey. This is evident in the Ghana water company
 
 ### Policy
 
-In Ghana, the Minerals and Mining Act 703 addresses small-scale mining specifically in sections 82 to 99. A license granted by the Minister for Mines or an authorized officer is required for engaging in small-scale mining. To qualify, an applicant must be a Ghanaian citizen at least eighteen years old and registered by the Commission.
+In Ghana, the Minerals and Mining Act 703 addresses small-scale mining specifically in sections 82 to 99. A license granted by the Minister for Mines or an authorized officer is required for engaging in small-scale mining (Onditi, 2022). To qualify, an applicant must be a Ghanaian citizen at least eighteen years old and registered by the Commission.
 
-The Minister may designate areas for small-scale mining in the Gazette. District Offices of the Commission compile a register of miners, supervise operations, provide training, and facilitate the formation of Small Scale Miners Associations. Small Scale Mining Committees in designated areas assist the District Office in monitoring and promoting mining operations. Licensees must employ effective mining methods, observe safety rules, and protect the environment.
+The Minister may designate areas for small-scale mining in the Gazette (Onditi, 2022). District Offices of the Commission compile a register of miners, supervise operations, provide training, and facilitate the formation of Small Scale Miners Associations (Onditi, 2022). Small Scale Mining Committees in designated areas assist the District Office in monitoring and promoting mining operations. Licensees must employ effective mining methods, observe safety rules, and protect the environment.
 
 ### Insights
 
-The policy does state how ministry and their district offices monitor the illegal mining. However, the rise in illegal activities and destruction of water bodies and land shows a gap of ineffectiveness. There are some other parties involved in monitoring the mining activities such as Environmental Protection Agency (EPA).(Kazapoe et al., 2023)
+The policy does state how ministry and their district offices monitor the illegal mining. However, the rise in illegal activities and destruction of water bodies and land shows a gap of ineffectiveness. There are some other parties involved in monitoring the mining activities such as Environmental Protection Agency (EPA) (Kazapoe et al., 2023).
 
 The government established an anti-galamsey task force code named Operation Halt was formed to crackdown on illegal mining activities.(“Anti-galamsey task force destroys 10 Changfans other mining equipment on Pra River,” 2024) Even though the taskforce was formed in October 2024, the illegal mining still persist with four civil society organizations calling for leadership changes.(“Anti-galamsey task force destroys 10 Changfans other mining equipment on Pra River,” 2024; “Illegal mining menace,” 2025)
 
@@ -36,11 +36,11 @@ While the exact method the anti-galamsey taskforce uses to identify illegal mini
 
 Niroumand-Jadidi, et al. (2020) assessed PRISMA hyperspectral imagery for retrieving water quality parameters, comparing it with Sentinel-2. PRISMA’s more spectral bands as compare to Sentinel-2. This is shown in figure 2. This was used with the WASI (Water Colour Simulator) model to detect suspended materials. Since illegal mining is closely linked with river pollution, this makes PRISMA a powerful tool for identifying active mining areas.(Kazapoe et al., 2023).
 
-![Fig. 2 PRISMA and Sentinel-2 Band Comparison](week_4/Bands_in_PRISMA_and_Sentinel-2.png)
+![Fig. 2 PRISMA and Sentinel-2 Band Comparison (Niroumand-Jadidi et al., 2020)](week_4/Bands_in_PRISMA_and_Sentinel-2.png)
 
 Water contamination often reflects mining activity—thus tracking turbidity, sediment, and color changes can help pinpoint illegal operations. Ghana’s water bodies are regularly affected, and the PRISMA sensor’s hyperspectral capacity makes it suitable for detecting subtle environmental changes missed by standard multispectral sensors.
 
-![Fig. 3 Illegal mining near a river](week_4/galamsey_in_water_bodies.jpg)
+![Fig. 3 Illegal mining near a river (Ngom et al., 2023)](week_4/galamsey_in_water_bodies.jpg)
 
 ### Paper 2 Wider Mining Impacts
 
@@ -48,9 +48,9 @@ Ngom et al. (2023) explored EO methods to monitor artisanal mining impacts like 
 
 ### Proposed Workflow
 
-Building on both papers, I propose a monitoring dashboard using data from Sentinel-2 (temporal coverage) and PRISMA (detailed sensing). EO data would be processed to flag suspicious changes in land use or water quality. These would be cross-referenced by partners like the Ghana Water Company and Forestry Commission, providing ground validation. ![Data workflow](week_4/workflow_1.png)
+Building on both papers, I propose a monitoring dashboard using data from Sentinel-2 (temporal coverage) and PRISMA (detailed sensing). EO data would be processed to flag suspicious changes in land use or water quality. These would be cross-referenced by partners like the Ghana Water Company and Forestry Commission, providing ground validation. Figure 4 shows the workflow.![Data workflow](week_4/workflow_1.png)
 
-![Dashboard workflow](week_4/workflow_2.png)
+![Fig. 4 Dashboard workflow (Ngom et al., 2023)](week_4/workflow_2.png)
 
 A refined dashboard would prioritize locations by impact, helping the taskforce deploy more strategically. This transparency could deter offenders, support early intervention, and reduce costs associated with water treatment and ecosystem restoration.
 
@@ -83,3 +83,5 @@ Ngom, N.M., Baratoux, D., Bolay, M., Dessertine, A., Abass Saley, A., Baratoux, 
 Niroumand-Jadidi, M., Bovolo, F., Bruzzone, L., 2020. Water Quality Retrieval from PRISMA Hyperspectral Images: First Experience in a Turbid Lake and Comparison with Sentinel-2. Remote Sens. 12, 3984. https://doi.org/10.3390/rs12233984
 
 Savage, S., Conboye, J., Fray, K., Adeoye, A., Bhandari, A., 2025. How illegal gold mining is fuelling a chocolate shortage. Financ. Times.
+
+Onditi, F., 2022. Introduction: A Study of Inequalities, Resource Conflict, and Sustainability, in: Onditi, F. (Ed.), Gender Inequalities in Africa’s Mining Policies: A Study of Inequalities, Resource Conflict and Sustainability. Springer, Singapore, pp. 1–27. https://doi.org/10.1007/978-981-16-8252-0_1
